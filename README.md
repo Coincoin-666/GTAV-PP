@@ -14,7 +14,7 @@ Le site s'articulera autour de trois grands axes:
 - Des conseils,  
 - Un *walkthrough* qui sera caché dans un *dropdown* pour éviter les *spoils*.  
 
-1. Les véhicules:  
+2. Les véhicules:  
 
 - Seront définis par leur propriétés communes: *brand*, *model*, *type*,  
 - Les spécificités de base propres à chaque véhicule,  
@@ -22,7 +22,7 @@ Le site s'articulera autour de trois grands axes:
 - Possibilité d'achat (+ prix) et/ou *permanent spawn*,  
 - Photos, si mobile -> "lien vers".  
 
-1. Une carte interactive:  
+3. Une carte interactive:  
 
 Qui contiendra, autre que les éléments déjà présents:  
 
