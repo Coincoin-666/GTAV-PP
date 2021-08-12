@@ -81,7 +81,7 @@ Donc,
 
 #### Mobile First
 
-- Les images seront minimisées voire cachée sur mobile, selon les sections.
+- Les images seront minimisées voire cachées sur mobile, selon les sections.
 - La page d'accueil consistera principalement en trois boutons d'accès aux différentes parties.
 - La *navbar* sera toujours présente pour permettre une navigation aisée et rapide.
 - Tests sur *iPhone X*, *iPhone 6, 7, 8 S+*, *iPad* et *Firefox Desktop*  
