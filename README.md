@@ -10,9 +10,9 @@ Le site s'articulera autour de trois grands axes:
 
 1. Les missions (*story mode* & *strangers and freaks*):
 
-    - Les conditions d'obtention de la médaille d'Or,  
-    - Des conseils,  
-    - Un *walkthrough* qui sera caché dans un *dropdown* pour éviter les *spoils*.  
+- Les conditions d'obtention de la médaille d'Or,  
+- Des conseils,  
+- Un *walkthrough* qui sera caché dans un *dropdown* pour éviter les *spoils*.  
 
 1. Les véhicules:  
 
