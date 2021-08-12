@@ -2,7 +2,7 @@
 
 ## Projet Pro 2021
 
-### Genèse (FR)
+### [A] Genèse (FR)
 
 L'idée de départ est de créer un guide pour le jeu vidéo.  
 Nous nous concentrerons sur le mode solo, le multi-joueur étant extrèmement vaste, soyons réaliste.  
@@ -37,7 +37,7 @@ Aussi, nous n'avons pas tout trouvé donc le but est de pouvoir la mettre à jou
 
 ---
 
-### Genesis (EN)
+### [A] Genesis (EN)
 
 *The general idea is to create a help guide to for the video game.*  
 *We will only concentrate on the story mode, simply because the online game is vastly vast so we wouldn't want be irrealistic.*
@@ -71,3 +71,29 @@ Aussi, nous n'avons pas tout trouvé donc le but est de pouvoir la mettre à jou
 --> **_full vector drawing_**
 
 ---
+
+### [B] Design Général (FR)
+
+> *__"Pensez Mobile First!"__*
+> *Anousone*, formateur.
+
+Donc,
+
+#### Mobile First
+
+- Les images seront minimisées voire cachée sur mobile, selon les sections.
+- La page d'accueil consistera principalement en trois boutons d'accès aux différentes parties.
+- La *navbar* sera toujours présente pour permettre une navigation aisée et rapide.
+- Tests sur *iPhone X*, *iPhone 6, 7, 8 S+*, *iPad* et *Firefox Desktop*  
+Un grand merci à ce monsieur: [ResponsivelyApp](https://github.com/responsively-org/responsively-app).
+
+Notre principal objectif est de créer une sorte d'appli intuitive où l'on puisse accéder facilement et rapidement aux infos.
+
+#### Typographie
+
+Le choix n'est pas définitif.
+
+- *Pricedown Black*, une police ressemblant à l'originale de GTA. De piètre qualité cependant.
+- *Atkinson Hyperlegible*, pour le texte courant. C'est une police créée par le [*Braille Institute of America*](https://brailleinstitute.org/), conçue spécialement pour augmenter la lisibilité.  
+Excellente initiative, elle téléchargeable gratuitement sur le site et est également disponible via [GoogleFonts](https://fonts.google.com/specimen/Atkinson+Hyperlegible?query=atk).
+- *Bebas Neue*, trouvée sur [GoogleFonts](https://fonts.google.com/specimen/Bebas+Neue?query=beba), ressemble à l'Impact, -> titres, probablement venant de pays de l'Est, considérant les glyphes présents, pas d'accents FR.
