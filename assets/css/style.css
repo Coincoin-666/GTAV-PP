@@ -1,0 +1,59 @@
+/* GTA5 General Style */
+
+/* Typography */
+@font-face {
+    font-family: 'Pricedown', cursive;
+    src: url('../fonts/PricedownBlack-MwRY.ttf'), format(truetype);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+.gtaLikeFont {
+    font-family: 'Pricedown', cursive;
+}
+
+.current_text {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 400;
+}
+
+._title {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.brands_logo {
+    width: 25px;
+    height: 25px;
+}
+
+/* Colors */
+.gold {
+    color: #FFD700;
+}
+
+.blue {
+    color: lightskyblue;
+}
+
+.orange {
+    color: darkorange;
+}
+
+.green {
+    color: palegreen;
+}
+
+.red {
+    color: rgb(172, 52, 53);
+}
+
+.grey {
+    color: #6c757d;
+}
