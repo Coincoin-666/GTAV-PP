@@ -8,10 +8,34 @@
 </script>
 
 <!------ SWAL ------>
-<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js" integrity="sha256-sq9BgeqJAlCLfjfAO+2diFGt5O8aIYNrds+yhlpFnvg=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js" integrity="sha256-sq9BgeqJAlCLfjfAO+2diFGt5O8aIYNrds+yhlpFnvg=" crossorigin="anonymous">
 </script>
-<script src ="../assets/swal/swal.js" type="text/javascript">
-</script> -->
+<script>
+    if (<?= $add_char_success ?>) {
+        Swal.fire({
+            icon: 'success',
+            iconColor: '#ffd700',
+            background: '#1d2a33',
+            title: 'passed.',
+            text: 'New character added.',
+            confirmButtonColor: '#16441a',
+            timer: '5000'
+        })
+    }
+</script>
+<script>
+    if (<?= $edit_char_success ?>) {
+        Swal.fire({
+            icon: 'success',
+            iconColor: '#ffd700',
+            background: '#1d2a33',
+            title: 'passed.',
+            text: 'Modification(s) saved.',
+            confirmButtonColor: '#16441a',
+            timer: '5000'
+        })
+    }
+</script>
 </body>
 
 </html>

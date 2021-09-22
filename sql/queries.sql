@@ -1,12 +1,23 @@
-#------------------------------------------------------------
-# Database: gtadb
-#------------------------------------------------------------
+------------------------------------------------------------
+ Database: gtadb
+------------------------------------------------------------
 
 --ONLY FUNCTIONNAL QUERIES--
 
---Vehicles queries
---Brands & Logos
+--Characters queries--
+--Inserts--
+INSERT INTO `playable_characters` (`char_fname`,`char_lname`) VALUES (:char_fname, :char_lname);
 
+--Select--
+SELECT * FROM `playable_characters`;
+SELECT * FROM `playable_characters` WHERE `char_id`=:char_id;
+
+--Update--
+UPDATE `playable_characters` SET `char_fname`,`char_lname`= :char_fname, :char_lname WHERE `char_id`=:char_id;
+
+
+--Vehicles queries--
+--Brands & Logos--
 SELECT `brand_name`,`brand_category`,`brand_origin`,`brand_logo` FROM `vehicles_brands` NATURAL JOIN `vehicles_brand_logo`;
 SELECT `brand_name`,`brand_category`,`brand_origin`,`brand_logo` FROM `vehicles_brands` NATURAL JOIN `vehicles_brand_logo` ORDER BY `brand_name`;
 

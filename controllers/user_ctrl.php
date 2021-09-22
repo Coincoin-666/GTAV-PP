@@ -5,7 +5,6 @@ require "../tools/php/functions.php";
 // Variables declaration //
 $error = [];
 // $add_success = json_encode($add_success = false);
-$reg_n = "/[a-zA-ZÀ-ÖØ-öø-ÿ]+.?(( |\-)[a-zA-ZÀ-ÖØ-öø-ÿ]+.?)/mi";
 
 
 /**

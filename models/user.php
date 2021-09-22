@@ -14,10 +14,10 @@ class User extends Database {
     $add_q->bindValue(':password', $password, PDO::PARAM_STR);
     $add_q->execute();
     }
-    public function authentication() {
-        if (isset($_POST['login_btn'])) {
-            $db = $this->connectDatabase();
-            $q = "SELECT `username` FROM `user`";
-        }
-    }
+    // public function authentication() {
+    //     if (isset($_POST['login_btn'])) {
+    //         $db = $this->connectDatabase();
+    //         $q = "SELECT `username` FROM `user`";
+    //     }
+    // }
 }

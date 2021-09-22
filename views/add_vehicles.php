@@ -64,51 +64,55 @@ require "../controllers/vehicles_ctrl.php";
                             if ($brand_name['vehicles_brand_id'] == $_POST['select_vehicle_brand']) {
                         ?>
                                 <p><?= $brand_name['brand_name'] ?></p>
-                        <?php
-                            }
-                        }
-                        ?>
+
                     </div>
                     <div class="col">
                         <!-- Brand Logo -->
                         <!-- from dbtable: vehicles_brand_logo -->
-                        <?php
-                        if (isset($_POST['brand_name'])) {
-                        ?>
-                            <img src="<?= $get_one_vehicle_infos['brand_logo_path'] ?>">
-                        <?php
+                        <img src="/<?= $brand_name['brand_logo_path'] ?>">
+                    </div>
+            <?php
+                            }
                         }
-                        ?>
-                    </div>
-                    <div class="col">
-                        <!-- Vehicle Model -->
-                        <!-- from dbtable: vehicles -->
-                        <label for="vehicle_model" class="form-label">Model</label>
-                        <input type="text" name="vehicle_model" id="vehicle_model" class="form-control">
-                    </div>
+            ?>
+            <div class="col">
+                <!-- Vehicle Model -->
+                <!-- from dbtable: vehicles -->
+                <label for="vehicle_model" class="form-label">Model</label>
+                <input type="text" name="vehicle_model" id="vehicle_model" class="form-control">
+            </div>
                 </div>
                 <div class="row g-3 mt-3">
                     <div class="col">
                         <!-- Brand Price Category (high, mid, low) -->
                         <!-- from dbtable: vehicles_brand -->
                         <label for="brand_cat" class="form-label">Price Tag</label>
-                        <input type="text" name="brand_cat" id="brand_cat" class="form-control">
+                        <input type="text" name="vehicle_brand_id" value="<?= $_POST['brand_category'] ?>" readonly hidden>
+                        <?php
+                        foreach ($get_brand_category as $brand_cat) {
+                            if ($brand_cat == $_POST['brand_category']) {
+
+                        ?>
+                                <p><?= $brand_cat ?></p>
+                        <?php
+                            }
+                        }
+                        ?>
                     </div>
                     <div class="col">
                         <!-- Brand Country -->
                         <!-- from dbtable: vehicles_brands -->
                         <label for="brand_origin" class="form-label"><span class="text-muted">(supposed)</span> Country of Origin</label>
-                        <select name="brand_origin">
-                            <?php
-                            foreach ($get_brand_origin as $origin) {
-                                if ($brand_name['vehicles_brand_id'] == $_POST['select_vehicle_brand']) {
-                            ?>
-                                    <option value="<?= $get_brand_origin ?>"><?= $get_brand_origin ?></option>
-                            <?php
-                                }
+                        <input type="text" name="vehicle_brand_id" value="<?= $_POST['brand_origin'] ?>" readonly hidden>
+                        <?php
+                        // foreach ($get_brand_origin['brand_origin']) {
+                            if ($get_brand_origin['brand_origin'] == $_POST['brand_origin']) {
+                        ?>
+                                <p><?= $get_brand_origin['brand_origin'] ?></p>
+                        <?php
                             }
-                            ?>
-                        </select>
+                        // }
+                        ?>
                     </div>
                     <div class="col">
                         <!-- Vehicle Terrain (land, sea, sky) -->
@@ -138,6 +142,10 @@ require "../controllers/vehicles_ctrl.php";
         </div>
     <?php
     }
+
+    var_dump($get_brand_category['brand_category']);
+    var_dump($get_brand_origin);
+    var_dump($_POST['brand_origin']);
     ?>
 
 

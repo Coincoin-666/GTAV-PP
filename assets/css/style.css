@@ -35,25 +35,33 @@ a:hover {
 
 /* Colors */
 .gold {
-    color: #FFD700;
+    color: #ffd700;
 }
 
 .blue {
-    color: lightskyblue;
+    color: #87cefa;
 }
 
 .orange {
-    color: darkorange;
+    color: #ff8c00;
 }
 
 .green {
-    color: palegreen;
+    color: #98fb98;
+}
+
+.darkGreen {
+    color: #16441a;
 }
 
 .red {
-    color: rgb(172, 52, 53);
+    color: #ac3435;
 }
 
 .grey {
     color: #6c757d;
+}
+
+.veryDarkBlue {
+    color: #1d2a33;
 }

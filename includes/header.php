@@ -45,18 +45,6 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown me-2">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMisc" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miscellanious</a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Scrap Letters</a></li>
-                                <li><a class="dropdown-item" href="#">SpaceShip Parts</a></li>
-                                <li><a class="dropdown-item" href="#">Altruists Camp</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Interactive Map</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown me-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVehicles" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vehicles</a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Cars</a></li>
@@ -68,6 +56,22 @@
                                 <li><a class="dropdown-item" href="#">Boats</a></li>
                                 <li><a class="dropdown-item" href="#">Planes</a></li>
                                 <li><a class="dropdown-item" href="#">Helicopters</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMisc" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miscellanious</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Scrap Letters</a></li>
+                                <li><a class="dropdown-item" href="#">SpaceShip Parts</a></li>
+                                <li><a class="dropdown-item" href="#">Altruists Camp</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Interactive Map</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../views/list_characters.php">Characters</a></li>
                             </ul>
                         </li>
                         <form class="d-flex me-2">

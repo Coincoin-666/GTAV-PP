@@ -1,5 +1,8 @@
 <?php
 
+$reg_n = "/[a-zA-ZÀ-ÖØ-öø-ÿ]+.?(( |\-)[a-zA-ZÀ-ÖØ-öø-ÿ]+.?)/mi";
+
+
 function sanitizeData($data) {
     $newData = strtolower($data);
     $newData = trim($newData);

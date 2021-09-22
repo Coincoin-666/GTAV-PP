@@ -70,6 +70,12 @@
                     <a href="../views/add_vehicles.php" role="button">
                         <li>Add Vehicles</li>
                     </a>
+                    <a href="../views/add_character.php" role="button">
+                        <li>Add Character</li>
+                    </a>
+                    <a href="../views/list_characters.php" role="button">
+                        <li>List Characters</li>
+                    </a>
                 </ul>
             </div>
         </div>

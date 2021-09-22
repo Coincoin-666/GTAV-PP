@@ -13,13 +13,13 @@ class Vehicles extends Database {
         return $get_brand_names_and_id;
     }
 
-    public function get_one_vehicle_infos() {
-        $db = $this->connectDatabase();
-        $q = "SELECT `brand_logo_path` FROM `vehicles_brand_logo` NATURAL JOIN `vehicles_brands`;";
-        $get_one_vehicle_infos_q = $db->query($q);
-        $get_one_vehicle_infos = $get_one_vehicle_infos_q->fetch();
-        return $get_one_vehicle_infos;
-    }
+    // public function get_one_vehicle_infos() {
+    //     $db = $this->connectDatabase();
+    //     $q = "SELECT `brand_logo_path` FROM `vehicles_brand_logo` NATURAL JOIN `vehicles_brands`;";
+    //     $get_one_vehicle_infos_q = $db->query($q);
+    //     $get_one_vehicle_infos = $get_one_vehicle_infos_q->fetch();
+    //     return $get_one_vehicle_infos;
+    // }
 
     public function get_brand_origin() {
         $db = $this->connectDatabase();
@@ -27,6 +27,14 @@ class Vehicles extends Database {
         $get_brand_origin_q = $db->query($q);
         $get_brand_origin = $get_brand_origin_q->fetch();
         return $get_brand_origin;
+    }
+
+    public function get_brand_category() {
+        $db = $this->connectDatabase();
+        $q = "SELECT `brand_category` FROM `vehicles_brands`;";
+        $get_brand_category_q = $db->query($q);
+        $get_brand_category = $get_brand_category_q->fetch();
+        return $get_brand_category;
     }
 
     public function add_vehicle() {

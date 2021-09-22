@@ -11,12 +11,16 @@ $get_brand_names_and_id_obj = new Vehicles();
 $get_brand_names_and_id = $get_brand_names_and_id_obj->get_brand_names_and_id();
 
 // Display one brand characteristics.
-$get_one_vehicle_infos_obj = new Vehicles();
-$get_one_vehicle_infos = $get_one_vehicle_infos_obj->get_one_vehicle_infos();
+// $get_one_vehicle_infos_obj = new Vehicles();
+// $get_one_vehicle_infos = $get_one_vehicle_infos_obj->get_one_vehicle_infos();
 
 // Get the brand's country of origin.
 $get_brand_origin_obj = new Vehicles();
 $get_brand_origin = $get_brand_origin_obj->get_brand_origin();
+
+// Get the brand's category.
+$get_brand_category_obj = new Vehicles();
+$get_brand_category = $get_brand_category_obj->get_brand_category();
 
 
 
