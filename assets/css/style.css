@@ -12,8 +12,25 @@ a {
 }
 
 a:hover {
-    color: #FFD700;
+    color: #ffd700;
 }
+
+#trash_btn {
+    color: #fff;
+}
+
+#trash_btn:hover {
+    color: #ffd700 !important;
+}
+
+#edit_btn {
+    color: #fff;
+}
+
+#edit_btn:hover {
+    color: #ffd700 !important;
+}
+
 
 .gtaLikeFont {
     font-family: 'Pricedown', cursive;
@@ -26,6 +43,12 @@ a:hover {
 
 ._title {
     font-family: 'Bebas Neue', cursive;
+}
+
+/* Images */
+.small_logo {
+    max-height: 20px;
+    max-width: 40px;
 }
 
 .brands_logo {

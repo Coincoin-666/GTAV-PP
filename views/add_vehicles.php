@@ -7,7 +7,7 @@ require "../controllers/vehicles_ctrl.php";
     <div class="container justify-content-center align-item-center">
         <h2 class="_title">Select a vehicle brand</h2>
         <div class="container border border-dark p-5">
-            <form action="" method="POST">
+            <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
                 <div class="row">
                     <div class="col">
                         <label for="select_vehicle_brand" class="form_label">Brand</label>
@@ -50,16 +50,15 @@ require "../controllers/vehicles_ctrl.php";
     if (isset($_POST['select_vehicle_brand'])) {
     ?>
         <h2 class="_title mt-2">Create a new vehicle display</h2>
-        <div class="container border border-dark p-5">
+        <div class="container border border-dark">
             <form action="" method="POST">
                 <div class="row g-3 mt-3">
                     <div class="col">
                         <!-- Vehicle Brand -->
                         <!-- from dbtable: vehicles_brands -->
                         <label for="brand_name" class="form-label">Brand</label>
-                        <input type="text" name="vehicle_brand_id" value="<?= $_POST['select_vehicle_brand'] ?>" readonly hidden>
+                        <input type="text" name="vehicle_brand_id" class="form-control" value="<?= $_POST['select_vehicle_brand'] ?>" readonly hidden>
                         <?php
-
                         foreach ($get_brand_names_and_id as $brand_name) {
                             if ($brand_name['vehicles_brand_id'] == $_POST['select_vehicle_brand']) {
                         ?>
@@ -70,50 +69,53 @@ require "../controllers/vehicles_ctrl.php";
                         <!-- Brand Logo -->
                         <!-- from dbtable: vehicles_brand_logo -->
                         <img src="/<?= $brand_name['brand_logo_path'] ?>">
-                    </div>
-            <?php
-                            }
-                        }
-            ?>
-            <div class="col">
-                <!-- Vehicle Model -->
-                <!-- from dbtable: vehicles -->
-                <label for="vehicle_model" class="form-label">Model</label>
-                <input type="text" name="vehicle_model" id="vehicle_model" class="form-control">
-            </div>
-                </div>
-                <div class="row g-3 mt-3">
-                    <div class="col">
-                        <!-- Brand Price Category (high, mid, low) -->
-                        <!-- from dbtable: vehicles_brand -->
-                        <label for="brand_cat" class="form-label">Price Tag</label>
-                        <input type="text" name="vehicle_brand_id" value="<?= $_POST['brand_category'] ?>" readonly hidden>
-                        <?php
-                        foreach ($get_brand_category as $brand_cat) {
-                            if ($brand_cat == $_POST['brand_category']) {
 
-                        ?>
-                                <p><?= $brand_cat ?></p>
-                        <?php
+                <?php
                             }
                         }
-                        ?>
+                ?>
                     </div>
                     <div class="col">
                         <!-- Brand Country -->
                         <!-- from dbtable: vehicles_brands -->
                         <label for="brand_origin" class="form-label"><span class="text-muted">(supposed)</span> Country of Origin</label>
-                        <input type="text" name="vehicle_brand_id" value="<?= $_POST['brand_origin'] ?>" readonly hidden>
+                        <input type="text" name="vehicle_brand_id" value="<?= $_POST['select_vehicle_brand'] ?>" readonly hidden>
                         <?php
-                        // foreach ($get_brand_origin['brand_origin']) {
-                            if ($get_brand_origin['brand_origin'] == $_POST['brand_origin']) {
+                        foreach ($get_brand_infos as $brand_infos) {
+                            if ($brand_infos['vehicles_brand_id'] == $_POST['select_vehicle_brand']) {
                         ?>
-                                <p><?= $get_brand_origin['brand_origin'] ?></p>
-                        <?php
-                            }
-                        // }
-                        ?>
+                                <p><?= $brand_infos['brand_origin'] ?></p>
+
                     </div>
+
+                    <div class="col">
+                        <!-- Brand Price Category (high, mid, low) -->
+                        <!-- from dbtable: vehicles_brand -->
+                        <label for="brand_cat" class="form-label">Price Tag</label>
+                        <input type="text" name="vehicle_brand_categroy" value="<?= $_POST['select_vehicle_brand'] ?>" readonly hidden>
+
+                        <p><?= $brand_infos['brand_category'] ?></p>
+                <?php
+                            }
+                        }
+                ?>
+                    </div>
+                </div>
+                <div class="row g-3 mt-3">
+                    <div class="col">
+                        <!-- Vehicle Model -->
+                        <!-- from dbtable: vehicles -->
+                        <label for="vehicle_model" class="form-label">Model</label>
+                        <input type="text" name="vehicle_model" id="vehicle_model" class="form-control">
+                    </div>
+
+                    <div class="col">
+                        <!-- Vehicle Type (offroad, sport, super etc) -->
+                        <!-- from dbtable: vehicles -->
+                        <label for="v_type" class="form-label">Vehicle Category</label>
+                        <input type="text" name="v_type" id="v_type" class="form-control">
+                    </div>
+
                     <div class="col">
                         <!-- Vehicle Terrain (land, sea, sky) -->
                         <!-- from dbtable: vehicles -->
@@ -121,13 +123,9 @@ require "../controllers/vehicles_ctrl.php";
                         <input type="text" name="terrain" id="terrain" class="form-control">
                     </div>
                 </div>
+
                 <div class="row g-3 mt-3">
-                    <div class="col">
-                        <!-- Vehicle Type (offroad, sport, super etc) -->
-                        <!-- from dbtable: vehicles -->
-                        <label for="v_type" class="form-label">Vehicle Category</label>
-                        <input type="text" name="v_type" id="v_type" class="form-control">
-                    </div>
+
                     <div class="col">
                         <!-- Vehicle Spec (possibly a data table with basic spec) -->
                         <!-- from dbtable: vehicles -->
@@ -135,6 +133,7 @@ require "../controllers/vehicles_ctrl.php";
                         <input type="text" name="spec_table" id="spec_table" class="form-control">
                     </div>
                 </div>
+
                 <div class="mt-5 text-end">
                     <button name="add_vehicle_btn" class="btn btn-dark ms-2">Save</button>
                 </div>
@@ -142,13 +141,7 @@ require "../controllers/vehicles_ctrl.php";
         </div>
     <?php
     }
-
-    var_dump($get_brand_category['brand_category']);
-    var_dump($get_brand_origin);
-    var_dump($_POST['brand_origin']);
     ?>
-
-
     <h2 class="_title mt-2">Screenshot</h2>
     <div class="container border border-dark p-5">
         <p class="fs-1 _title red">SCREENSHOT UPLOAD</p>
@@ -160,8 +153,8 @@ require "../controllers/vehicles_ctrl.php";
     </div>
 
 </div>
-</div>
 
 <?php
 require "../includes/footer.php";
+
 ?>

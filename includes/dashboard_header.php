@@ -15,7 +15,7 @@
 
 <body>
     <div class="row g-3">
-        <div class="col-3 sm-none d-flex flex-column flex-shrink-0 p-2 vh-100 grey bg-dark">
+        <div class="col-3 sm-none d-flex flex-column flex-shrink-0 p-2 grey bg-dark">
             <div class="container _title">
                 <div class="row g-2">
                     <div class="col-6">
@@ -59,7 +59,7 @@
             </div>
             <hr class="gold">
             <div class="current_text ms-5">
-                <h3 class="_title text-muted fs-5 text-decoration-underline">Administrator<br>Area</h3>
+                <h3 class="_title text-muted fs-5 text-decoration-underline">Administrator Area</h3>
                 <ul class="list-unstyled ms-1">
                     <a href="../views/login.php" role="button">
                         <li>Login</li>
@@ -67,9 +67,17 @@
                     <a href="../views/add_user.php" role="button">
                         <li>Add User</li>
                     </a>
+                    <a href="../views/add_picture.php" role="button">
+                        <li>Add Picture</li>
+                    </a>
+                    <hr class="gold">
                     <a href="../views/add_vehicles.php" role="button">
                         <li>Add Vehicles</li>
                     </a>
+                    <a href="../views/list_vehicles_brands.php" role="button">
+                        <li>Vehicles Brands</li>
+                    </a>
+                    <hr class="gold">
                     <a href="../views/add_character.php" role="button">
                         <li>Add Character</li>
                     </a>

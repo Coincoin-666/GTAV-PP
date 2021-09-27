@@ -21,7 +21,7 @@ require "../controllers/characters_ctrl.php";
             </div>
             <div class="row mt-3">
                 <div class="offset-1">
-                    <button type="submit" name="edit_char_btn" class="btn btn-dark ms-2">Save</button>
+                    <button type="submit" name="edit_char_btn" class="btn btn-dark ms-2" value="<?= $_GET['char_id'] ?>">Save</button>
                 </div>
             </div>
         </form>

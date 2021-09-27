@@ -1,6 +1,6 @@
 <?php
-require "../models/characters.php";
-require "../tools/php/functions.php";
+require "../models/_characters.php";
+require "../tools/functions.php";
 
 // Errors array //
 $error = [];
@@ -8,6 +8,16 @@ $error = [];
 // SWAL //
 $add_char_success = false;
 $edit_char_success = false;
+$del_char_success = false;
+
+/**
+ * Delete character.
+ */
+if (isset($_POST['delete_character'])) {
+    $char_id = $_POST['delete_character'];
+    $del_char_obj = new Character();
+    $del_char_obj->delete_character($char_id);
+}
 
 /**
  * List all characters present in the database.
@@ -43,9 +53,8 @@ if (isset($_GET['char_id'])) {
 if (isset($_POST['edit_char_btn']) && count($error) == 0) {
     $char_fname = $_POST['char_fname'];
     $char_lname = $_POST['char_lname'];
+    $char_id = $_GET['char_id'];
     $up_char_obj = new Character();
-    $up_char_obj->update_character($char_fname, $char_lname, $_GET['char_id']);
-    $infos_character_obj = $infos_character->infos_character($_GET['char_id']);
+    $up_char_obj->update_character($char_fname, $char_lname, $char_id);
     $edit_char_success = true;
-    header('Location: list_characters.php');
 }

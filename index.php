@@ -1,5 +1,5 @@
 <?php
-include "includes/header.php";
+require "includes/header.php";
 ?>
 
 <main class="container">
@@ -54,5 +54,5 @@ include "includes/header.php";
 </main>
 
 <?php
-include "includes/footer.php";
+require "includes/footer.php";
 ?>

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>GrandTheftAutoFive</title>
 </head>
 
@@ -25,13 +25,14 @@
             <p>1</p>
             <p>2</p>
             <p>3</p>
+            <p>WE MUST SEE HOW TO CHANGE THE HEADER PICTURE REGARDIN THE PAGES WE'RE ON</p>
             <p>4</p>
             <p>5</p>
             <p>6</p>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-md">
-                <a class="gtaLikeFont gold fs-2" href="../index.php">GRAND THEFT AUTO FIVE</a>
+                <a class="gtaLikeFont gold fs-2" href="/index.php">GRAND THEFT AUTO FIVE</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -71,7 +72,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="../views/list_characters.php">Characters</a></li>
+                                <li><a class="dropdown-item" href="../views/characters.php">Characters & Story</a></li>
                             </ul>
                         </li>
                         <form class="d-flex me-2">

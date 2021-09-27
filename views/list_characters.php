@@ -12,6 +12,7 @@ require "../controllers/characters_ctrl.php";
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
                 </thead>
 
                 <?php
@@ -25,7 +26,12 @@ require "../controllers/characters_ctrl.php";
                             <?= $character['char_lname'] ?>
                         </td>
                         <td>
-                            <a href="edit_character.php?char_id=<?= $character['char_id'] ?>"><i class="fas fa-edit"></i></a>
+                            <button class="btn" id="edit_btn"><a href="edit_character.php?char_id=<?= $character['char_id'] ?>"><i class="fas fa-edit"></i></a></button>
+                        </td>
+                        <td>
+                            <form action="" method="POST">
+                                <button class="btn" type="submit" name="delete_character" id="trash_btn" value="<?= $character['char_id'] ?>"><i class="fas fa-trash"></i></button>
+                            </form>
                         </td>
                     </tr>
                 <?php
