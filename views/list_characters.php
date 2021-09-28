@@ -41,7 +41,7 @@ require "../controllers/characters_ctrl.php";
         </div>
     </div>
 </div>
-</div>
+
 <?php
 include "../includes/footer.php";
 ?>

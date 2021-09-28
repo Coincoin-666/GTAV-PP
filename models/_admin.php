@@ -1,7 +1,18 @@
 <?php
 require "database.php";
 
+// $admin = "666";
+// $password = '$2y$10$feqGqQZJhJDuBCWMNBMSCOTjQki8n7eygJy3vu2hQXkQxObAenqoS'; 
 
+class Admin extends Database {
+    protected function get_admin_cred() {
+        $db = $this->connectDatabase();
+        $q = "SELECT * FROM `users`;";
+        $get_admin_cred_q = $db->query($q);
+        $admin_cred = $get_admin_cred_q->fetchAll();
+        return $admin_cred;
+    }
+}
 
 
 

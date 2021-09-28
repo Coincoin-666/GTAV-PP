@@ -58,31 +58,35 @@
                 </ul>
             </div>
             <hr class="gold">
-            <div class="current_text ms-5">
-                <h3 class="_title text-muted fs-5 text-decoration-underline">Administrator Area</h3>
-                <ul class="list-unstyled ms-1">
+            <div class="current_text">
+                <h3 class="_title text-muted fs-5 text-decoration-underline ms-2">Administrator Area</h3>
+                <ul class="list-unstyled">
                     <a href="../views/login.php" role="button">
-                        <li>Login</li>
+                        <li class="ms-5">Login</li>
                     </a>
                     <a href="../views/add_user.php" role="button">
-                        <li>Add User</li>
+                        <li class="ms-5">Add User</li>
                     </a>
+                    <hr class="gold ms-0">
                     <a href="../views/add_picture.php" role="button">
-                        <li>Add Picture</li>
+                        <li class="ms-5">Add Picture</li>
                     </a>
-                    <hr class="gold">
+                    <a href="../views/list_pictures.php" role="button">
+                        <li class="ms-5">List Pictures</li>
+                    </a>
+                    <hr class="gold ms-0">
                     <a href="../views/add_vehicles.php" role="button">
-                        <li>Add Vehicles</li>
+                        <li class="ms-5">Add Vehicles</li>
                     </a>
                     <a href="../views/list_vehicles_brands.php" role="button">
-                        <li>Vehicles Brands</li>
+                        <li class="ms-5">Vehicles Brands</li>
                     </a>
-                    <hr class="gold">
+                    <hr class="gold ms-0">
                     <a href="../views/add_character.php" role="button">
-                        <li>Add Character</li>
+                        <li class="ms-5">Add Character</li>
                     </a>
                     <a href="../views/list_characters.php" role="button">
-                        <li>List Characters</li>
+                        <li class="ms-5">List Characters</li>
                     </a>
                 </ul>
             </div>

@@ -1,5 +1,7 @@
 <?php
-include "../includes/dashboard_header.php";
+require "../includes/dashboard_header.php";
+require "../controllers/admin_ctrl.php";
+var_dump($admin_cred);
 ?>
 
 <div class="col-7 mt-4 current_text container">

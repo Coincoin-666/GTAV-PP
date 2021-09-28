@@ -4,28 +4,11 @@
 
 --ONLY FUNCTIONNAL QUERIES--
 
---Characters queries--
---Inserts--
-INSERT INTO `playable_characters` (`char_fname`,`char_lname`) VALUES (:char_fname, :char_lname);
+------------------------------------------------------------
+--Alter Table
+------------------------------------------------------------
 
---Select--
-SELECT * FROM `playable_characters`;
-SELECT * FROM `playable_characters` WHERE `char_id`=:char_id;
-
---Update--
-UPDATE `playable_characters` SET `char_fname`,`char_lname`= :char_fname, :char_lname WHERE `char_id`=:char_id;
-
-
---Vehicles queries--
---Brands & Logos--
-SELECT `brand_name`,`brand_category`,`brand_origin`,`brand_logo` FROM `vehicles_brands` NATURAL JOIN `vehicles_brand_logo`;
-SELECT `brand_name`,`brand_category`,`brand_origin`,`brand_logo` FROM `vehicles_brands` NATURAL JOIN `vehicles_brand_logo` ORDER BY `brand_name`;
-
-SELECT `brand_logo` FROM `vehicles_brand_logo`;
-
-
---Adding the brand name to the logo table--
---Not sure that is useful since the same column exists in the brands table.
+--Vehicles--
 UPDATE `vehicles_brand_logo` SET `brand_name` = 'albany' WHERE `vehicles_brand_logo`.`brand_logo_id` = 1;
 UPDATE `vehicles_brand_logo` SET `brand_name` = 'annis' WHERE `vehicles_brand_logo`.`brand_logo_id` = 2;
 UPDATE `vehicles_brand_logo` SET `brand_name` = 'benefactor' WHERE `vehicles_brand_logo`.`brand_logo_id` = 3;
@@ -80,6 +63,46 @@ UPDATE `vehicles_brand_logo` SET `brand_name` = 'weeny' WHERE `vehicles_brand_lo
 UPDATE `vehicles_brand_logo` SET `brand_name` = 'western' WHERE `vehicles_brand_logo`.`brand_logo_id` = 53;
 UPDATE `vehicles_brand_logo` SET `brand_name` = 'williard' WHERE `vehicles_brand_logo`.`brand_logo_id` = 54;
 UPDATE `vehicles_brand_logo` SET `brand_name` = 'pegassi' WHERE `vehicles_brand_logo`.`brand_logo_id` = 55;
+
+--Images--
+ ALTER TABLE `uploaded_img` CHANGE `uploaded_img_name` `uploaded_img_path` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL; 
+
+ ALTER TABLE `uploaded_img` ADD COLUMN `uploaded_img_uniqid` VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ ALTER TABLE `uploaded_img` CHANGE `uploaded_img_uniqid` `img_uniqid` VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL; 
+
+------------------------------------------------------------
+--New tables--
+------------------------------------------------------------
+
+ CREATE TABLE uploaded_img(
+        id_uploaded_img Int Auto_increment NOT NULL,
+        uploaded_img_name Varchar(150) NOT NULL
+        ,CONSTRAINT uploaded_img_PK PRIMARY KEY (id_uploaded_img)
+        )ENGINE=InnoBD;
+
+------------------------------------------------------------
+--Characters queries--
+------------------------------------------------------------
+--Inserts--
+INSERT INTO `playable_characters` (`char_fname`,`char_lname`) VALUES (:char_fname, :char_lname);
+
+--Select--
+SELECT * FROM `playable_characters`;
+SELECT * FROM `playable_characters` WHERE `char_id`=:char_id;
+
+--Update--
+UPDATE `playable_characters` SET `char_fname`,`char_lname`= :char_fname, :char_lname WHERE `char_id`=:char_id;
+
+------------------------------------------------------------
+--Vehicles queries--
+------------------------------------------------------------
+--Brands & Logos--
+SELECT `brand_name`,`brand_category`,`brand_origin`,`brand_logo` FROM `vehicles_brands` NATURAL JOIN `vehicles_brand_logo`;
+SELECT `brand_name`,`brand_category`,`brand_origin`,`brand_logo` FROM `vehicles_brands` NATURAL JOIN `vehicles_brand_logo` ORDER BY `brand_name`;
+
+SELECT `brand_logo` FROM `vehicles_brand_logo`;
+
+
 
 --Adding a new vehicle to the database--
 INSERT INTO `vehicles` (`model`,`terrain`,`v_type`,`spec_table`,`brand_logo_id`) VALUES (':model',':terrain',':v_type',':spec_table', ':brand_logo_id');
