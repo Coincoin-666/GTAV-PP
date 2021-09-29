@@ -4,7 +4,6 @@ require "database.php";
  * Class used to determine which character is playing the mission.
  * Will be even more useful when we get to the online part. In 16 years or so.
  * 
- * Also: I need a complete f*ck!ng CRUD.
  */
 class Character extends Database {
     // Create

@@ -68,7 +68,9 @@ UPDATE `vehicles_brand_logo` SET `brand_name` = 'pegassi' WHERE `vehicles_brand_
  ALTER TABLE `uploaded_img` CHANGE `uploaded_img_name` `uploaded_img_path` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL; 
 
  ALTER TABLE `uploaded_img` ADD COLUMN `uploaded_img_uniqid` VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
- ALTER TABLE `uploaded_img` CHANGE `uploaded_img_uniqid` `img_uniqid` VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL; 
+ ALTER TABLE `uploaded_img` CHANGE `uploaded_img_uniqid` `img_uniqid` VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+ ALTER TABLE `uploaded_img` ADD COLUMN `img_caption` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 
 ------------------------------------------------------------
 --New tables--
@@ -106,3 +108,10 @@ SELECT `brand_logo` FROM `vehicles_brand_logo`;
 
 --Adding a new vehicle to the database--
 INSERT INTO `vehicles` (`model`,`terrain`,`v_type`,`spec_table`,`brand_logo_id`) VALUES (':model',':terrain',':v_type',':spec_table', ':brand_logo_id');
+
+
+------------------------------------------------------------
+--Images queries--
+------------------------------------------------------------
+--Rebuild img path--
+SELECT CONCAT(`uploaded_img_path`,`img_uniqid`) FROM `uploaded_img`;

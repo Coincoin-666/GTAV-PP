@@ -9,17 +9,20 @@ require "../controllers/pics_ctrl.php";
         <div class="container border border-dark p-5">
 
 
-<?php
-var_dump($_FILES);
-var_dump($img_path_array);
-var_dump($img_uniqid_array);
+            <?php
+            if (!empty($img_dir)) {
+                foreach ($img_path_array as $path) {
+            ?>
+                    <div class="container d-flex justify-content-evenly">
+                        <figure class="figure figure-img">
+                            <img src="<?= $path[0] ?>" alt="" class="img-fluid">
+                        </figure>
+                    </div>
+            <?php
+                }
+            }
 
-
-if (!empty($img_dir)) {
-    echo '<img src="' . $img_path_array['uploaded_img_path'] . $img_uniqid_array['img_uniqid'] . '">';
-}
-
-?>
+            ?>
 
 
             <!-- Carousel Bootstrap -->

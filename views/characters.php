@@ -12,7 +12,9 @@ require "../includes/header.php";
         </div>
         <section class="container">
             <article class="row g-3">
-                <p class="col-sm-12 col-md-6 offset-md-6">
+                <div class="col-md-6 d-md-none d-lg-block bg-danger">
+                </div>
+                <p class="col-md-6 col-md-12 d-block">
                     For the first time in the Grand Theft Auto franchise, we will play one of three characters.<br>
                     Each one of them is defined by a set of characteristics, and one special ability.<br>
                     In this opus, <a href="https://www.rockstargames.com/">Rockstar Games</a> really took a particular care to the psychology of any of the characters – <em>hence the title of this article</em>.<br>
@@ -21,12 +23,67 @@ require "../includes/header.php";
                 </p>
             </article>
         </section>
-        <div class="col-sm-12 col-md-8 offset-md-2 bg-danger">
-            hellomotherfucer
-        </div>
-        <div class="col-sm-12 col-md-8 offset-md-2 bg-danger">
-            hellomotherfucer
-        </div>
+        <section class="container">
+            <div class="row g-3">
+                <article class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title _title">The Good</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title _title">The Bad</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title _title">The Ugly</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
 
     </div>
 

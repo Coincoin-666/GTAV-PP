@@ -2,26 +2,27 @@
 require "database.php";
 
 class Image extends Database {
-    public function save_img_in_db($uploaded_img_path, $img_uniqid) {
+    public function save_img_in_db($uploaded_img_path, $img_uniqid, $img_caption) {
         $db = $this->connectDatabase();
-        $q = "INSERT INTO `uploaded_img` (`uploaded_img_path`,`img_uniqid`) VALUES (:uploaded_img_path, :img_uniqid);";
+        $q = "INSERT INTO `uploaded_img` (`uploaded_img_path`,`img_uniqid`, `img_caption`) VALUES (:uploaded_img_path, :img_uniqid, :img_caption);";
         $save_img_in_db_q = $db->prepare($q);
         $save_img_in_db_q->bindValue(':uploaded_img_path', $uploaded_img_path, PDO::PARAM_STR);
         $save_img_in_db_q->bindValue(':img_uniqid', $img_uniqid, PDO::PARAM_STR);
+        $save_img_in_db_q->bindValue(':img_caption', $img_caption, PDO::PARAM_STR);
         $save_img_in_db_q->execute();
     }
     public function get_img_path() {
         $db = $this->connectDatabase();
-        $q = "SELECT `uploaded_img_path` FROM `uploaded_img`;";
+        $q = "SELECT CONCAT(`uploaded_img_path`,`img_uniqid`) FROM `uploaded_img`;";
         $get_img_q = $db->query($q);
         $img_path = $get_img_q->fetchAll();
         return $img_path;
     }
-    public function get_img_uniqid() {
+    public function get_img_caption() {
         $db = $this->connectDatabase();
-        $q = "SELECT `img_uniqid` FROM `uploaded_img`;";
-        $get_img_q = $db->query($q);
-        $img_uniqid = $get_img_q->fetchAll();
-        return $img_uniqid;
+        $q = "SELECT `img_caption` FROM `uploaded_img`;";
+        $get_img_cap_q = $db->query($q);
+        $img_caption = $get_img_cap_q->fetch();
+        return $img_caption;
     }
 }
