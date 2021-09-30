@@ -56,6 +56,12 @@ a:hover {
     height: 25px;
 }
 
+.img_gallery {
+    width: 30%;
+    height: auto;
+}
+
+
 /* Colors */
 .gold {
     color: #ffd700;

@@ -23,6 +23,9 @@
     <div class="bg-dark text-light">
         <div class="container border border-success">
             <div class="row">
+                <?php
+                
+                ?>
                 <img src="" alt="">
             </div>
         </div>

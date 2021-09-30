@@ -12,16 +12,16 @@ require "../controllers/pics_ctrl.php";
                 <div class="row g-3 align-items-end">
 
                     <div class="col-6">
-                        <p><label for="ig_screenshot" class="form-label">
+                        <label for="send_nudes" class="form-label">
                                 Choose a picture to upload. <span class="text-muted">*</span>
                                 <span class="fst-italic current_text red"><?= isset($img_error['format_err']) ?? $img_error['format_err'] ?></span>
-                            </label></p>
+                            </label>
                         <input type="hidden" name="MAX_FILE_SIZE" value="8000000">
                         <input type="file" name="send_nudes" id="send_nudes" class="form-control">
                         <span class="fst-italic current_text red"><?= isset($img_error['size_err']) ?? $img_error['size_err'] ?></span>
                     </div>
                     <div class="col-6">
-                        <label for="img_caption" class="form_label">Picture caption</label>
+                        <label for="img_caption" class="form_label mb-2">Picture caption</label>
                         <input type="text" name="img_caption" id="img_caption" class="form-control">
                     </div>
                     <div class="container">
@@ -36,23 +36,7 @@ require "../controllers/pics_ctrl.php";
                 </div>
 
             </form>
-            <?php
-            // define('APACHE_MIME_TYPES_URL', 'http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types');
-
-            // function generateUpToDateMimeArray($url)
-            // {
-            //     $s = array();
-            //     foreach (@explode("\n", @file_get_contents($url)) as $x)
-            //         if (isset($x[0]) && $x[0] !== '#' && preg_match_all('#([^\s]+)#', $x, $out) && isset($out[1]) && ($c = count($out[1])) > 1)
-            //             for ($i = 1; $i < $c; $i++)
-            //                 $s[] = '&nbsp;&nbsp;&nbsp;\'' . $out[1][$i] . '\' => \'' . $out[1][0] . '\'';
-            //     return @sort($s) ? '$mime_types = array(<br />' . implode($s, ',<br >') . '<br />);' : false;
-            // }
-
-            // echo
-            // generateUpToDateMimeArray(APACHE_MIME_TYPES_URL);
-            ?>
-
+            
         </div>
     </div>
 </div>

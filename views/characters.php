@@ -1,5 +1,6 @@
 <?php
 require "../includes/header.php";
+require "../controllers/pics_ctrl.php";
 ?>
 
 <main class="container current_text mt-4">
@@ -64,23 +65,29 @@ require "../includes/header.php";
                     </div>
                 </article>
 
+
                 <article class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title _title">The Ugly</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <form method="POST" name="trevor_bg">
+                        <div class="card" style="background-image: url(<?= $get_t_bg['path'] ?>);">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title _title">The Ugly</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-unstyled">
+                                <li>Born</li>
+                                <li>In</li>
+                                <li>ability</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                    </form>
+                    <?php
+                    var_dump($get_t_bg);
+                    ?>
                 </article>
 
             </div>
