@@ -21,14 +21,10 @@
     </nav>
     </div>
     <div class="bg-dark text-light">
-        <div class="current_text container border border-success">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>WE MUST SEE HOW TO CHANGE THE HEADER PICTURE REGARDIN THE PAGES WE'RE ON</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
+        <div class="container border border-success">
+            <div class="row">
+                <img src="" alt="">
+            </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-md">

@@ -8,21 +8,25 @@ require "../tools/functions.php";
  */
 $img_error = [];
 $img_dir = "/Applications/MAMP/htdocs/GTAV–tests/assets/imgs/screenshots/";
+$svg_dir = "/Applications/MAMP/htdocs/GTAV-test/assets/imgs/svg/";
 
-$valid_format = ["image/png"];
+$valid_format = [
+    'png'=>'image/png',
+    'svg'=>'image/svg+xml'
+];
 
 
 // Add a new picture.
 // Why so serious. Come on, name's just a joke.
 if ($_SERVER['REQUEST_METHOD'] == "POST" && count($_POST) > 0) {
     if (isset($_FILES['send_nudes']) && $_FILES['send_nudes']['name'] != NULL && $_FILES['send_nudes']['error'] == 0) {
-        $img_i = mime_content_type($_FILES['send_nudes']['tmp_name']);
+        $img_i = mime_content_type(realpath($_FILES['send_nudes']['tmp_name']));
         if (!in_array($img_i, $valid_format)) {
             $img_error['format_err'] = "Please only send .png pictures. It's written right above.";
         } elseif ($_FILES['send_nudes']['size'] > 8000000) {
             $img_error['size_err'] = "Please be sure to upload pictures under 8MiB. Again: Right above.";
         }
-        
+
         //¡¡¡Need an img checker to see if it already exists!!!//
 
         else {
@@ -31,8 +35,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && count($_POST) > 0) {
             $img_caption = sanitizeData($_POST['img_caption']);
             $img_obj = new Image();
             $img_saved = $img_obj->save_img_in_db($uploaded_img_path, $img_uniqid, $img_caption);
-            if (!empty($_FILES)) {
+            if (!empty($_FILES) && $img_i == 'image/png') {
                 move_uploaded_file($_FILES['send_nudes']['tmp_name'], $img_dir . $img_uniqid);
+            } elseif (!empty($_FILES) && $img_i == 'image/svg+xml') {
+                move_uploaded_file($_FILES['send_nudes']['tmp_name'], $svg_dir . $img_uniqid);
             }
         }
     } elseif (isset($_FILES['send_nudes']) && $_FILES['send_nudes']['name'] != NULL && $_FILES['send_nudes']['error'] == 2) {
@@ -44,9 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && count($_POST) > 0) {
 $img_path_obj = new Image();
 $img_path_array = $img_path_obj->get_img_path();
 
-// Caption.
-$img_caption_obj = new Image();
-$img_caption = $img_caption_obj->get_img_caption();
 
 
 

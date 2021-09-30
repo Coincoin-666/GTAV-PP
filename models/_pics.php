@@ -18,11 +18,5 @@ class Image extends Database {
         $img_path = $get_img_q->fetchAll();
         return $img_path;
     }
-    public function get_img_caption() {
-        $db = $this->connectDatabase();
-        $q = "SELECT `img_caption` FROM `uploaded_img`;";
-        $get_img_cap_q = $db->query($q);
-        $img_caption = $get_img_cap_q->fetch();
-        return $img_caption;
-    }
+    
 }

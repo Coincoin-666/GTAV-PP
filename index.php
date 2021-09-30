@@ -27,18 +27,19 @@ require "includes/header.php";
             </article>
         </section>
         <hr>
+        
         <div class="row">
             <section class="col-sm-12 col-md-4">
                 <div class="main_btn mt-4">
 
-                    <img src="assets/btns/SVG/missions_btn.svg" alt="big nav button to go to missions">
+                    <img src="assets/imgs/svg/missions_btn.svg" alt="big nav button to go to missions">
        
                 </div>
             </section>
             <section class="col-sm-12 col-md-4">
                 <div class="main_btn mt-4">
                     <a href="views/vehicles_display.php">
-                        <img src="assets/btns/SVG/vehicles_btn.svg" alt="big nav button to go to vehicles">
+                        <img src="assets/imgs/svg/vehicles_btn.svg" alt="big nav button to go to vehicles">
                     </a>
                 </div>
             </section>
