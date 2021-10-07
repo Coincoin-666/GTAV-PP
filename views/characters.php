@@ -7,14 +7,14 @@ require "../controllers/pics_ctrl.php";
 
     <div class="row g-3">
         <div class="_title">
-            <h1 lang="it" class="fst-italic">Il buono, il brutto, il cattivo</h1>
+            <h1 lang="it" class="fst-italic">Il buono, il brutto, il cattivo <span class="text-muted fs-5 exp">(1)</span></h1>
             <h2>The Good, the Bad and the Ugly</h2>
             <h3 class="text-muted mt-1">(Yes, I proudly came with this title.)</h3>
         </div>
 
         <article class="row g-3">
             <div class="col-md-6 d-lg-block d-md-none bg-danger">
-
+<p>INSERT LOS SANTOS PICS HERE</p>
             </div>
             <p class="col-md-12 col-lg-6">
                 For the first time in the Grand Theft Auto franchise, we will play one of three characters.<br>
@@ -25,19 +25,20 @@ require "../controllers/pics_ctrl.php";
             </p>
         </article>
 
-        <section class="container">
+        <section class="container char_cards text-dark">
             <div class="row g-3">
                 <article class="col-md-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" style="background-image: url(<?= $get_f_bg['path'] ?>);">
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h4 class="card-title _title">The Good</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h4 class="card-title _title">Franklin Clinton – The Good</h4>
+                            <p class="card-text">Born and raised in South LS in 1988. As far as we know, he always lived there, at his aunt's house, sister of his dead mom.
+                                Gangbanger, loyal to The Families, we understand that he did commit small crimes for a living with his friend Lamar, but wishes to become something more. He'll meet Michael, by chance, which will instore a weird father/son relationship.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
+                        <ul class="list-group list-unstyled">
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                         <div class="card-body">
                             <a href="#" class="card-link">Card link</a>
@@ -47,16 +48,16 @@ require "../controllers/pics_ctrl.php";
                 </article>
 
                 <article class="col-md-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" style="background-image: url(<?= $get_m_bg['path'] ?>);">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h4 class="card-title _title">The Bad</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h4 class="card-title _title">Michael De Santa – The Bad</h4>
+                            <p class="card-text">Formerly known as Michael Townley, notorious thief, born in ???????, and faked his death in 2013 as a retirement from his illegal affairs. He changed his name accordingdly to a deal he made with the FIB, and lived under witness protection program. He's the husband of Amanda, and a father of two children: Tracey and James.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
+                        <ul class="list-group list-unstyled">
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                         <div class="card-body">
                             <a href="#" class="card-link">Card link</a>
@@ -71,13 +72,13 @@ require "../controllers/pics_ctrl.php";
                         <div class="card" style="background-image: url(<?= $get_t_bg['path'] ?>);">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="card-title _title">The Ugly</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h4 class="card-title _title">Trevor Philips – The Ugly</h4>
+                                <p class="card-text">We don't know much about Trevor, except that he is completely crazy. Born in Canada – or as he says himself "in the Canadian border region of America" – meth-head, amphetamines addict, drug dealer, arms seller, completely unstable. He is extremely violent, as we'll see during his first mission, but very sensitive. All of this makes him a very complex character.</p>
                             </div>
                             <ul class="list-group list-unstyled">
-                                <li>Born</li>
-                                <li>In</li>
-                                <li>ability</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                             <div class="card-body">
                                 <a href="#" class="card-link">Card link</a>
@@ -85,14 +86,10 @@ require "../controllers/pics_ctrl.php";
                             </div>
                         </div>
                     </form>
-                    <?php
-                    var_dump($get_t_bg);
-                    ?>
                 </article>
 
             </div>
         </section>
-
     </div>
 
 </main>

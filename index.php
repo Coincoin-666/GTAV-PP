@@ -7,7 +7,7 @@ require "includes/header.php";
     <div class="row g-3">
         <h1 class=" _title gold">Welcome to the GTAV Mission Guide:</h1>
         <h2 class="_title text-muted">an amazing noob project.</h2>
-        <section class="row">
+        <section class="row justify-content-center align-items-center">
             <figure class="col-sm-12 col-md-4">
                 <!-- NEED A WELCOME TO LOS SANTOS PANEL -->
             </figure>

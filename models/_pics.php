@@ -34,5 +34,18 @@ class Image extends Database {
         $get_trevor_bg = $get_t_bg_q->fetch();
         return $get_trevor_bg;
     }
-    
+    public function get_franklin_bg() {
+        $db = $this->connectDatabase();
+        $q = "SELECT CONCAT(`uploaded_img_path`,`img_uniqid`) AS `path` FROM `uploaded_img` WHERE `id_uploaded_img`='51'";
+        $get_f_bg_q = $db->query($q);
+        $get_franklin_bg = $get_f_bg_q->fetch();
+        return $get_franklin_bg;
+    }
+    public function get_michael_bg() {
+        $db = $this->connectDatabase();
+        $q = "SELECT CONCAT(`uploaded_img_path`,`img_uniqid`) AS `path` FROM `uploaded_img` WHERE `id_uploaded_img`='52'";
+        $get_m_bg_q = $db->query($q);
+        $get_michael_bg = $get_m_bg_q->fetch();
+        return $get_michael_bg;
+    }
 }

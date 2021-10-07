@@ -1,6 +1,6 @@
 <?php
 require "../models/user.php";
-require "../tools/php/functions.php";
+require "../tools/functions.php";
 
 // Variables declaration //
 $error = [];

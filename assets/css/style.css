@@ -31,6 +31,10 @@ a:hover {
     color: #ffd700 !important;
 }
 
+.DIC {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
 
 .gtaLikeFont {
     font-family: 'Pricedown', cursive;
@@ -93,4 +97,43 @@ a:hover {
 
 .veryDarkBlue {
     color: #1d2a33;
+}
+
+/* Elements */
+footer>.mt-auto {
+    padding-top: 1rem !important;
+}
+
+.dedication {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#collapse_Wang {
+    font-family: 'Press Start 2P', cursive !important;
+    color: #fff !important;
+    font-size: small;
+}
+
+.basic_caption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+}
+
+.fa-external-link-alt {
+    font-size: xx-small;
+    vertical-align: super;
+    color: #6c757d;
+}
+
+.fa-copyright {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#collapse_Wang>.card-body, #collapse_Stallman>.card-body, #collapse_Barlow>.card-body {
+    background-color: #1d2a33;
 }

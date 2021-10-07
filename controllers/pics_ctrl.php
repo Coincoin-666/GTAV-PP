@@ -57,9 +57,13 @@ $img_path_array = $img_path_obj->get_img_path();
 $get_t_bg_obj = new Image();
 $get_t_bg = $get_t_bg_obj->get_trevor_bg();
 
+// Get F Background
+$get_f_bg_obj = new Image();
+$get_f_bg = $get_f_bg_obj->get_franklin_bg();
 
-
-
+// Get M Background
+$get_m_bg_obj = new Image();
+$get_m_bg = $get_m_bg_obj->get_michael_bg();
 
 
 
