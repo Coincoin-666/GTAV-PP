@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
     <meta charset="utf8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
