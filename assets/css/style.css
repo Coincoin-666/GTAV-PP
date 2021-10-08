@@ -104,6 +104,11 @@ footer>.mt-auto {
     padding-top: 1rem !important;
 }
 
+.icon {
+    height: 2rem;
+    width: auto;
+}
+
 .dedication {
     font-family: 'Courier New', Courier, monospace;
 }

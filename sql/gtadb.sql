@@ -122,3 +122,14 @@ CREATE TABLE users(
         user_role Varchar (25) NOT NULL
 	,CONSTRAINT users_PK PRIMARY KEY (user_id)
 )ENGINE=InnoDB;
+
+#------------------------------------------------------------
+# Table: icons
+#------------------------------------------------------------
+
+CREATE TABLE icons(
+        icon_id      Int  Auto_increment  NOT NULL ,
+        icon_name    Varchar (50) NOT NULL ,
+        icon_path    Varchar (100)  NOT NULL
+	,CONSTRAINT icons_PK PRIMARY KEY (`icon_id`)
+)ENGINE=InnoDB;

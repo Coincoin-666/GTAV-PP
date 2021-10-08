@@ -69,7 +69,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Interactive Map</a></li>
+                                <li><a class="dropdown-item" href="../views/property_list.php">Properties</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>

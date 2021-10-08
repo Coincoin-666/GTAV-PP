@@ -15,7 +15,7 @@
 
 <body>
     <div class="row g-3">
-        <div class="col-3 sm-none d-flex flex-column flex-shrink-0 p-2 grey bg-dark">
+        <div class="col-3 d-flex flex-column flex-shrink-0 p-2 grey bg-dark dashSideBar">
             <div class="container _title">
                 <div class="row g-2">
                     <div class="col-6">
@@ -71,8 +71,14 @@
                     <a href="../views/add_picture.php" role="button">
                         <li class="ms-5">Add Picture</li>
                     </a>
+                    <a href="../views/add_icon.php" role="button">
+                        <li class="ms-5">Add Icon</li>
+                    </a>
+                    <a href="../views/icons.php" role="button">
+                        <li class="ms-5">View Icons</li>
+                    </a>
                     <a href="../views/list_pictures.php" role="button">
-                        <li class="ms-5">List Pictures</li>
+                        <li class="ms-5">List All</li>
                     </a>
                     <hr class="gold ms-0">
                     <a href="../views/add_vehicles.php" role="button">

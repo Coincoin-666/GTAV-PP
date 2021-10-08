@@ -1,6 +1,7 @@
 <?php
 require "../includes/header.php";
 require "../controllers/pics_ctrl.php";
+require "../controllers/icons_ctrl.php";
 ?>
 
 <main class="container current_text mt-4">
@@ -36,7 +37,9 @@ require "../controllers/pics_ctrl.php";
                                 Gangbanger, loyal to The Families, we understand that he did commit small crimes for a living with his friend Lamar, but wishes to become something more. He'll meet Michael, by chance, which will instore a weird father/son relationship.</p>
                         </div>
                         <ul class="list-group list-unstyled">
-                            <li></li>
+                            <li>
+                                <img src="<?= (isset())  ?>">'; ?>
+                            </li>
                             <li></li>
                             <li></li>
                         </ul>

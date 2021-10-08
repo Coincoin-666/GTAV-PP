@@ -7,8 +7,10 @@ require "../tools/functions.php";
  * Works with functions.php & login.php.
  */
 $img_error = [];
-$img_dir = "/Applications/MAMP/htdocs/GTAV–tests/assets/imgs/screenshots/";
-$svg_dir = "/Applications/MAMP/htdocs/GTAV–tests/assets/imgs/svg/";
+$img_dir = "/Applications/MAMP/htdocs/HOLYFUCKINGSHIT/GTAV-PP/assets/imgs/screenshots/";
+$svg_dir = "/Applications/MAMP/htdocs/HOLYFUCKINGSHIT/GTAV–PP/assets/imgs/svg/";
+
+
 
 $valid_format = [
     'png' => 'image/png',

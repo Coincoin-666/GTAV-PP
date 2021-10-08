@@ -16,6 +16,14 @@ function rename_img() {
     return $rename_img;
 }
 
+function rename_icon() {
+    $ext = explode(".", $_FILES['new_icon']['name']);
+    $rename_img = uniqid() . "." . $ext[1];
+    return $rename_img;
+}
+
+
+
 // function rename_screenshot_with_path($img_saved) {
 //     $rename_screenshot_with_path = $path . $img_saved;
 //     return $rename_screenshot_with_path;

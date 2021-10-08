@@ -72,6 +72,11 @@ UPDATE `vehicles_brand_logo` SET `brand_name` = 'pegassi' WHERE `vehicles_brand_
 
  ALTER TABLE `uploaded_img` ADD COLUMN `img_caption` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 
+--Icons--
+ ALTER TABLE `icons` CHANGE `icon_name` `icon_uniqid` VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+ ALTER TABLE `icons` ADD COLUMN `icon_name` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
 ------------------------------------------------------------
 --New tables--
 ------------------------------------------------------------

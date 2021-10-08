@@ -1,4 +1,4 @@
-<hr class="gold mt-5">
+<hr class="gold">
 <!-- Footer -->
 <footer class="footer mt-auto py-3 bg-dark">
     <div class="container justify-content-center">
@@ -31,7 +31,7 @@
         <div class="row collapsing_el">
             <div class="text-center small dedication">
                 <p>
-                    <span class="text-muted"><i class="far fa-copyright me-2"></i>– COPYLEFT – ALL WRONGS RESERVED – Coincoin-666<br>Dedicated to <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Wang" aria-expanded="false">Li-Chen Wang</a>, <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Stallman" aria-expanded="false">Richard Stallman</a> & <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Barlow" aria-expanded="false">John Perry Barlow</a>.</span>
+                    <span class="text-muted"><i class="far fa-copyright me-2"></i>– COPYLEFT – ALL WRONGS RESERVED – <a href="https://www.github.com/Coincoin-666/" target="_blank">Coincoin-666</a><br>Dedicated to <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Wang" aria-expanded="false">Li-Chen Wang</a>, <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Stallman" aria-expanded="false">Richard Stallman</a> & <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Barlow" aria-expanded="false">John Perry Barlow</a>.</span>
                 </p>
                 <div class="collapse" id="collapse_Wang">
                     <div class="card card-body">
