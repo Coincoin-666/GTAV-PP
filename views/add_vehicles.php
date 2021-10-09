@@ -27,7 +27,6 @@ require "../controllers/vehicles_ctrl.php";
                     <div class="col">
                         <div class="container d-flex justify-content-evenly">
                             <figure>
-                                <!-- ici faut faire du js -->
                                 <img src="" alt="" id="brand_logo">
                             </figure>
                         </div>
@@ -49,7 +48,7 @@ require "../controllers/vehicles_ctrl.php";
     <?php
     if (isset($_POST['select_vehicle_brand'])) {
     ?>
-        <h2 class="_title mt-2">Create a new vehicle display</h2>
+        <h2 class="_title mt-2">New Vehicle</h2>
         <div class="container border border-dark">
             <form action="" method="POST">
                 <div class="row g-3 mt-3">
@@ -105,8 +104,8 @@ require "../controllers/vehicles_ctrl.php";
                     <div class="col">
                         <!-- Vehicle Model -->
                         <!-- from dbtable: vehicles -->
-                        <label for="vehicle_model" class="form-label">Model</label>
-                        <input type="text" name="vehicle_model" id="vehicle_model" class="form-control">
+                        <label for="model" class="form-label">Model</label>
+                        <input type="text" name="model" id="model" class="form-control">
                     </div>
 
                     <div class="col">
@@ -131,6 +130,7 @@ require "../controllers/vehicles_ctrl.php";
                         <!-- from dbtable: vehicles -->
                         <label for="spec_table" class="form-label">Vehicle Spec.</label>
                         <input type="text" name="spec_table" id="spec_table" class="form-control">
+                        <input type="hidden" name="vehicle_brand_id" value="<?= $_POST['select_vehicle_brand'] ?>">
                     </div>
                 </div>
 
@@ -140,16 +140,12 @@ require "../controllers/vehicles_ctrl.php";
             </form>
         </div>
     <?php
+    var_dump($_POST['select_vehicle_brand']);
     }
     ?>
     <h2 class="_title mt-2">Screenshot</h2>
     <div class="container border border-dark p-5">
         <p class="fs-1 _title red">SCREENSHOT UPLOAD</p>
-    </div>
-
-    <h2 class="_title mt-2">Preview</h2>
-    <div class="container border border-dark p-5">
-        <p class="fs-1 _title red">ICI CE SERAIT PAS MAL DE METTRE UN APERÇU DE L'ARTICLE VIA JS</p>
     </div>
 
 </div>

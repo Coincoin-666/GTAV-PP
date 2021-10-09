@@ -12,11 +12,10 @@ require "../controllers/icons_ctrl.php";
             if (!empty($icon_dir)) {
                 foreach ($icon_array as $icon) {
             ?>
-                    <img src="<?= $icon['i_path']  ?>" class="icon">
+                    <img src="<?= $icon['i_path'] ?>" class="icon">
             <?php
                 }
             }
-
             ?>
         </div>
     </div>

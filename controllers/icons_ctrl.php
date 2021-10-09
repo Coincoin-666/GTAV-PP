@@ -38,4 +38,4 @@ $icon_array = $icon_array_obj->get_icons_array();
 
 // One icon by name //
 $icon_obj = new Icon();
-$icon = $icon_obj->get_one_icon($icon_name);
+$icon = $icon_obj->get_one_icon();

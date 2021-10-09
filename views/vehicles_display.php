@@ -1,6 +1,6 @@
 <?php
-include "../includes/header.php";
-require "";
+require "../includes/header.php";
+require "../controllers/vehicles_ctrl.php";
 ?>
 <!-- vehicles brand -->
 <main class="container">
@@ -17,13 +17,13 @@ require "";
             </thead>
             <tbody>
                 <tr>
-                    <td><?= $get ?></td>
-                    <td><?=  ?></td>
-                    <td><?=  ?></td>
-                    <td><?=  ?></td>
-                    <td><?=  ?></td>
-                    <td><?=  ?></td>
-                    <td><?=  ?></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>

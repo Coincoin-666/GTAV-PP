@@ -1,7 +1,6 @@
 <?php
 require "../includes/header.php";
 require "../controllers/pics_ctrl.php";
-require "../controllers/icons_ctrl.php";
 ?>
 
 <main class="container current_text mt-4">
@@ -15,7 +14,7 @@ require "../controllers/icons_ctrl.php";
 
         <article class="row g-3">
             <div class="col-md-6 d-lg-block d-md-none bg-danger">
-<p>INSERT LOS SANTOS PICS HERE</p>
+                <p>INSERT LOS SANTOS PICS HERE</p>
             </div>
             <p class="col-md-12 col-lg-6">
                 For the first time in the Grand Theft Auto franchise, we will play one of three characters.<br>
@@ -38,9 +37,11 @@ require "../controllers/icons_ctrl.php";
                         </div>
                         <ul class="list-group list-unstyled">
                             <li>
-                                <img src="<?= (isset())  ?>">'; ?>
+                                <i class="fas fa-home"></i><span class="ms-1 me-2">|</span>Forum Drive, Strawberry – South LS
                             </li>
-                            <li></li>
+                            <li>
+                                <i class="fas fa-car"></i><span class="ms-1 me-2">|</span><a href="#">Bravado</a> <a href="#">Buffalo S</a>
+                            </li>
                             <li></li>
                         </ul>
                         <div class="card-body">
@@ -58,8 +59,12 @@ require "../controllers/icons_ctrl.php";
                             <p class="card-text">Formerly known as Michael Townley, notorious thief, born in ???????, and faked his death in 2013 as a retirement from his illegal affairs. He changed his name accordingdly to a deal he made with the FIB, and lived under witness protection program. He's the husband of Amanda, and a father of two children: Tracey and James.</p>
                         </div>
                         <ul class="list-group list-unstyled">
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <i class="fas fa-home"></i><span class="ms-1 me-2">|</span>Portola Drive, Rockford Hills – Downtown LS
+                            </li>
+                            <li>
+                                <i class="fas fa-car"></i><span class="ms-1 me-2">|</span>
+                            </li>
                             <li></li>
                         </ul>
                         <div class="card-body">
@@ -79,8 +84,12 @@ require "../controllers/icons_ctrl.php";
                                 <p class="card-text">We don't know much about Trevor, except that he is completely crazy. Born in Canada – or as he says himself "in the Canadian border region of America" – meth-head, amphetamines addict, drug dealer, arms seller, completely unstable. He is extremely violent, as we'll see during his first mission, but very sensitive. All of this makes him a very complex character.</p>
                             </div>
                             <ul class="list-group list-unstyled">
-                                <li></li>
-                                <li></li>
+                                <li>
+                                    <i class="fas fa-caravan"></i><span class="ms-1 me-2">|</span>Zancudo Avenue, Sandy Shores – North San Andreas
+                                </li>
+                                <li>
+                                    <i class="fas fa-car"></i><span class="ms-1 me-2">|</span>
+                                </li>
                                 <li></li>
                             </ul>
                             <div class="card-body">
@@ -93,8 +102,8 @@ require "../controllers/icons_ctrl.php";
 
             </div>
         </section>
-    </div>
 
+    </div>
 </main>
 
 
