@@ -8,32 +8,28 @@ require "includes/header.php";
         <h1 class=" _title gold">Welcome back to San Andreas</h1>
         <h2 class="_title text-muted">an amazing noob project.</h2>
         <section class="row justify-content-center align-items-center">
-            <figure class="col-sm-12 col-md-4">
-                <!-- NEED A WELCOME TO LOS SANTOS PANEL -->
-            </figure>
+
+            <div class="col-sm-12 col-md-4">
+                <img src="" alt="insert awesome picture here">
+            </div>
 
             <article class="col-sm-12 col-md-6 current-text">
                 <h3>Project Description</h3>
                 <p>This came to me as a project mainly for two reasons:</p>
-                <ul class="list-unstyled">
-                    <li>
-                        like blahblahblah
-                        <!-- As we must focus on building a responsive website, I've noticed that most of the video game online guides are in fact responsive, but there is not really a mobile version. So my actual intention to build a mobile version only with the main informations. -->
-                    </li>
-                    <li>
-                        <!-- Secondely, we need an updatable database. Since I haven't finished the game entirely, I thought that could be good idea to create an evolving website. As I'll find new items, I'll updates the articles etc. -->
-                    </li>
-                </ul>
+                <p>First, I loved those games. From GTA2 in 1999 to this one initially released in 2013. Back then we were SO forbidden to play this sort of games (along with <a href="https://www.stainlessgames.com/games/carmageddon">Carmageddon</a>) so obviously, it was insanely fun.</p>
+                <p>Secondly, it was a perfect way for me of doing some politically not-so-correct work – and yes, in the world we live in, that's something very important to me – but hey! Not my fault. It's in the game.</p>
+                <p>Enjoy.</p>
             </article>
         </section>
+
         <hr>
-        
+
         <div class="row">
             <section class="col-sm-12 col-md-4">
                 <div class="main_btn mt-4">
 
                     <img src="assets/imgs/svg/missions_btn.svg" alt="big nav button to go to missions">
-       
+
                 </div>
             </section>
             <section class="col-sm-12 col-md-4">

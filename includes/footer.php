@@ -1,12 +1,12 @@
-<hr class="gold">
+<hr class="gold mt-5">
 <!-- Footer -->
-<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+<footer class="bg-dark footer sticky-footer">
     <div class="container align-items-center">
         <div class="row collapsing_el">
             <div class="text-center small dedication">
                 <p>
                     <span class="text-muted"><i class="far fa-copyright me-2"></i>– COPYLEFT – ALL WRONGS RESERVED – <a href="https://www.github.com/Coincoin-666/" target="_blank">Coincoin-666</a><br>Dedicated to <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Wang" aria-expanded="false">Li-Chen Wang</a>, <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Stallman" aria-expanded="false">Richard Stallman</a> & <a href="#" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_Barlow" aria-expanded="false">John Perry Barlow</a>.</span><br>
-                    <span class="text-muted">© Although, real copyright <a href="https://www.rockstargames.com/">Rockstar Games</a> – All rights reserved.</span>
+                    <span class="text-muted">© Although, real copyright <a href="https://www.rockstargames.com/">Rockstar Games</a> – All rights reserved – <a href="../views/license.php">License</a></span>
                 </p>
                 <div class="collapse" id="collapse_Wang">
                     <div class="card card-body">
@@ -89,9 +89,6 @@
             </div>
         </div>
     </div>
-    <script>
-
-    </script>
 </footer>
 
 

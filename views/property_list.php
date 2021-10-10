@@ -53,6 +53,48 @@ require "../controllers/pics_ctrl.php";
                     </form>
                 </div>
             </div>
+
+            <div class="container border-f mb-2">
+                <div class="row g-3">
+                    <h4 class="hand" data-bs-toggle="collapse" href="#smotwCollapse" role="button" aria-expanded="false" aria-controls="smotwCollapse">Smoke On The Water</h4>
+                    <form method="POST" name="SmokeOnTheWater">
+                        <div class="collapse" id="smotwCollapse">
+                            <div class="card card-body propertyCollapse">
+                                <div class="container">
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <figure class="figure properties">
+                                                <img src="<?= $img_path_array['7']['0'] ?>" class="figure-img img-fluid rounded" alt="DowntownCabCo front sign">
+                                                <figcaption class="figure-caption">Smoke On The Water – Cannabis Dispensary</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure class="figure properties">
+                                                <img src="" class="figure-img img-fluid rounded" alt="Sorry, the developer forgot to save screenshots when buying the property.">
+                                                <figcaption class="figure-caption">Hello world!</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-map-marker-alt me-2"></i>Vespucci Beach Sidewalk – Vespucci Beach.</li>
+                                                <li><i class="fas fa-dollar-sign me-2"></i>204,000</li>
+                                                <li><i class="fas fa-dollar-sign me-1"></i><i class="fas fa-sign-in-alt me-2"></i>9,600</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>Ideally located in South Los Santos, beach front. The owner might call you to handle some deliveries to the store.</p>
+                                            <p>The name of the store is a reference to a song by Deep Purple, and the whole neighborhood looks a lot like Venice Beach in Los Angeles. <span class="text-muted">Please note that medical use of weed has been legal since 1996 and its adult use since 2016.</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="container border-f mb-2">
                 <div class="row g-3">
                     <h4 class="hand" data-bs-toggle="collapse" href="#inpoundCollapse" role="button" aria-expanded="false" aria-controls="inpoundCollapse">Towing Inpound</h4>
@@ -62,19 +104,6 @@ require "../controllers/pics_ctrl.php";
                         <div class="card card-body propertyCollapse">
                             <img src="" alt="">
                             <p>$500 per vehicle</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container border-f mb-2">
-                <div class="row g-3">
-                    <h4 class="hand" data-bs-toggle="collapse" href="#smotwCollapse" role="button" aria-expanded="false" aria-controls="smotwCollapse">Smoke On The Water</h4>
-                    <p>
-                    </p>
-                    <div class="collapse" id="smotwCollapse">
-                        <div class="card card-body propertyCollapse">
-                            <img src="" alt="">
-                            <p>smoke some weeeed and Hello Deep Purple</p>
                         </div>
                     </div>
                 </div>
