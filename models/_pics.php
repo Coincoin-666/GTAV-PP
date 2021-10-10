@@ -27,14 +27,6 @@ class Image extends Database {
         $img_path = $get_img_q->fetchAll();
         return $img_path;
     }
-    // public function get_one_img($img_id) {
-    //     $db = $this->connectDatabase();
-    //     $q = "SELECT * FROM `uploaded_img` WHERE `id_uploaded_img`=$img_id;";
-    //     $get_one_img_q = $db->prepare($q);
-    //     $get_one_img_q->bindValue(':img_id', $img_id, PDO::PARAM_STR);
-    //     $get_one_img = $get_one_img_q->fetch();
-    //     return $get_one_img;
-    // }
     public function get_trevor_bg() {
         $db = $this->connectDatabase();
         $q = "SELECT CONCAT(`uploaded_img_path`,`img_uniqid`) AS `path` FROM `uploaded_img` WHERE `id_uploaded_img`='48'";

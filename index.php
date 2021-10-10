@@ -4,7 +4,7 @@ require "includes/header.php";
 
 <main class="container">
 
-    <div class="row g-3">
+    <div class="row g-3 py-auto my-auto">
         <h1 class=" _title gold">Welcome back to San Andreas</h1>
         <h2 class="_title text-muted">an amazing noob project.</h2>
         <section class="row justify-content-center align-items-center">

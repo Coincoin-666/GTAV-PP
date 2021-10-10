@@ -63,7 +63,7 @@ require "../controllers/pics_ctrl.php";
                                 <i class="fas fa-home"></i><span class="ms-1 me-2">|</span>Portola Drive, Rockford Hills – Downtown LS
                             </li>
                             <li>
-                                <i class="fas fa-car"></i><span class="ms-1 me-2">|</span>
+                                <i class="fas fa-car"></i><span class="ms-1 me-2">|</span>Obey Tailgater
                             </li>
                             <li></li>
                         </ul>
@@ -88,7 +88,7 @@ require "../controllers/pics_ctrl.php";
                                     <i class="fas fa-caravan"></i><span class="ms-1 me-2">|</span>Zancudo Avenue, Sandy Shores – North San Andreas
                                 </li>
                                 <li>
-                                    <i class="fas fa-car"></i><span class="ms-1 me-2">|</span>
+                                    <i class="fas fa-car"></i><span class="ms-1 me-2">|</span>Canis Bodhi
                                 </li>
                                 <li></li>
                             </ul>
