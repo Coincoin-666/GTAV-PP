@@ -1,33 +1,7 @@
 <hr class="gold">
 <!-- Footer -->
-<footer class="footer mt-auto py-3 bg-dark">
-    <div class="container justify-content-center">
-        <div class="row g-5">
-            <div class="col-4">
-                <ul class="list-unstyled">
-                    <li><a href="">Licences</a></li>
-                    <li><a href="">Terms of Service</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <ul class="list-unstyled">
-                    <li><a href="">Site Map</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <ul class="list-unstyled">
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-        </div>
+<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+    <div class="container align-items-center">
         <div class="row collapsing_el">
             <div class="text-center small dedication">
                 <p>

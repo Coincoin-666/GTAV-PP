@@ -5,7 +5,7 @@ require "includes/header.php";
 <main class="container">
 
     <div class="row g-3">
-        <h1 class=" _title gold">Welcome to the GTAV Mission Guide:</h1>
+        <h1 class=" _title gold">Welcome back to San Andreas</h1>
         <h2 class="_title text-muted">an amazing noob project.</h2>
         <section class="row justify-content-center align-items-center">
             <figure class="col-sm-12 col-md-4">
@@ -38,8 +38,8 @@ require "includes/header.php";
             </section>
             <section class="col-sm-12 col-md-4">
                 <div class="main_btn mt-4">
-                    <a href="views/vehicles_display.php">
-                        <img src="assets/imgs/svg/vehicles_btn.svg" alt="big nav button to go to vehicles">
+                    <a href="views/vehicles_gallery.php">
+                        <img src="assets/imgs/svg/vehicles_btn.svg" alt="big nav button to go to vehicles gallery">
                     </a>
                 </div>
             </section>

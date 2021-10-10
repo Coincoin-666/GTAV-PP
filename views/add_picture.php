@@ -13,9 +13,9 @@ require "../controllers/pics_ctrl.php";
 
                     <div class="col-6">
                         <label for="send_nudes" class="form-label">
-                                Choose a picture to upload. <span class="text-muted">*</span>
-                                <span class="fst-italic current_text red"><?= isset($img_error['format_err']) ?? $img_error['format_err'] ?></span>
-                            </label>
+                            Choose a picture to upload. <span class="text-muted">*</span>
+                            <span class="fst-italic current_text red"><?= isset($img_error['format_err']) ?? $img_error['format_err'] ?></span>
+                        </label>
                         <input type="hidden" name="MAX_FILE_SIZE" value="8000000">
                         <input type="file" name="send_nudes" id="send_nudes" class="form-control">
                         <span class="fst-italic current_text red"><?= isset($img_error['size_err']) ?? $img_error['size_err'] ?></span>
@@ -31,12 +31,15 @@ require "../controllers/pics_ctrl.php";
 
                 <div class="row mt-4">
                     <div class="container d-flex justify-content-end me-4">
-                        <button type="submit" class="btn btn-primary mt-3">Send</button>
+                        <button type="submit" class="btn btn-dark mt-3">Send</button>
                     </div>
                 </div>
-
+                <?php
+                var_dump($_FILES);
+                var_dump($_POST);
+                ?>
             </form>
-            
+
         </div>
     </div>
 </div>

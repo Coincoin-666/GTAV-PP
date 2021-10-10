@@ -41,23 +41,6 @@
                 </div>
             </div>
             <hr class="gold">
-            <div class="current_text ms-5">
-                <ul class="list-unstyled ms-1">
-                    <a href="#" role="button">
-                        <li>C</li>
-                    </a>
-                    <a href="#" role="button">
-                        <li>R</li>
-                    </a>
-                    <a href="#" role="button">
-                        <li>U</li>
-                    </a>
-                    <a href="#" role="button">
-                        <li>D</li>
-                    </a>
-                </ul>
-            </div>
-            <hr class="gold">
             <div class="current_text">
                 <h3 class="_title text-muted fs-5 text-decoration-underline ms-2">Administrator Area</h3>
                 <ul class="list-unstyled">

@@ -81,11 +81,29 @@ UPDATE `vehicles_brand_logo` SET `brand_name` = 'pegassi' WHERE `vehicles_brand_
 --New tables--
 ------------------------------------------------------------
 
- CREATE TABLE uploaded_img(
+CREATE TABLE uploaded_img(
         id_uploaded_img Int Auto_increment NOT NULL,
         uploaded_img_name Varchar(150) NOT NULL
         ,CONSTRAINT uploaded_img_PK PRIMARY KEY (id_uploaded_img)
-        )ENGINE=InnoBD;
+        )ENGINE=InnoDB;
+
+CREATE TABLE icons(
+        icon_id           Int Auto_increment NOT NULL,
+        icon_path         Varchar(150) NOT NULL,
+        icon_uniqid       Varchar(25) NOT NULL,
+        icon_name         Varchar(150) NOT NULL
+        ,CONSTRAINT icon_PK PRIMARY KEY (icon_id)
+        )ENGINE=InnoDB;
+
+CREATE TABLE properties(
+        id_property             INT AUTO_INCREMENT NOT NULL,
+        property_path           VARCHAR(150) NOT NULL,
+        property_uniqid         VARCHAR(25) NOT NULL,
+        property_name           VARCHAR(150) NOT NULL,
+        property_address        VARCHAR(200) NOT NULL
+        ,CONSTRAINT properties_PK PRIMARY KEY (id_property)
+        )ENGINE=InnoDB;
+
 
 ------------------------------------------------------------
 --Characters queries--

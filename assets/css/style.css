@@ -49,6 +49,11 @@ a:hover {
     font-family: 'Bebas Neue', cursive;
 }
 
+.hand {
+    font-family: 'Birthstone', cursive;
+}
+
+
 /* Images */
 .small_logo {
     max-height: 20px;
@@ -100,14 +105,34 @@ a:hover {
 }
 
 /* Elements */
-footer>.mt-auto {
-    padding-top: 1rem !important;
-}
-
 .icon {
     height: 2rem;
     width: auto;
     margin: 1rem;
+}
+
+.border-f {
+    border: solid 1px #98fb98;
+    border-radius: 1rem;
+}
+
+.border-m {
+    border: solid 1px #87cefa;
+    border-radius: 1rem;
+}
+
+.border-t {
+    border: solid 1px #ff8c00;
+    border-radius: 1rem;
+}
+
+.properties {
+    max-height: 420px;
+    width: auto;
+}
+
+.propertyCollapse {
+    background-color: #1d2a33;
 }
 
 .dedication {
@@ -118,6 +143,14 @@ footer>.mt-auto {
     font-family: 'Press Start 2P', cursive !important;
     color: #fff !important;
     font-size: small;
+}
+
+.dashSideBar {
+    height: 100vh;
+}
+
+footer {
+    margin-top: auto !important;
 }
 
 .basic_caption {
@@ -137,7 +170,6 @@ footer>.mt-auto {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: FlipH;
-    -ms-filter: "FlipH";
 }
 
 #collapse_Wang>.card-body, #collapse_Stallman>.card-body, #collapse_Barlow>.card-body {

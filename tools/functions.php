@@ -22,8 +22,6 @@ function rename_icon() {
     return $rename_img;
 }
 
-
-
 // function rename_screenshot_with_path($img_saved) {
 //     $rename_screenshot_with_path = $path . $img_saved;
 //     return $rename_screenshot_with_path;
