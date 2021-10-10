@@ -34,10 +34,6 @@ require "../controllers/pics_ctrl.php";
                         <button type="submit" class="btn btn-dark mt-3">Send</button>
                     </div>
                 </div>
-                <?php
-                var_dump($_FILES);
-                var_dump($_POST);
-                ?>
             </form>
 
         </div>

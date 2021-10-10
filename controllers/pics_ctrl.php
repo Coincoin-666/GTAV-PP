@@ -67,7 +67,7 @@ $get_f_bg = $get_f_bg_obj->get_franklin_bg();
 $get_m_bg_obj = new Image();
 $get_m_bg = $get_m_bg_obj->get_michael_bg();
 
-
+// This might work. At some point.
 
 // if (isset($_POST['login_btn']) && $_SESSION['error'] == 0) {
 //     if ($_POST['pseudonymn'] == $admin && password_verify($_POST['password'], $password)) {

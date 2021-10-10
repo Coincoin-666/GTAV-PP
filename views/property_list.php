@@ -78,7 +78,7 @@ require "../controllers/pics_ctrl.php";
                                     <div class="row">
                                         <div class="col-6">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-map-marker-alt me-2"></i>Vespucci Beach Sidewalk – Vespucci Beach.</li>
+                                                <li><i class="fas fa-map-marker-alt me-2"></i>Vespucci Beach Sidewalk – Vespucci Beach</li>
                                                 <li><i class="fas fa-dollar-sign me-2"></i>204,000</li>
                                                 <li><i class="fas fa-dollar-sign me-1"></i><i class="fas fa-sign-in-alt me-2"></i>9,600</li>
                                             </ul>

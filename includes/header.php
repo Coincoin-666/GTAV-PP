@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -24,9 +25,6 @@
     <div class="bg-dark text-light">
         <div class="container border border-success">
             <div class="row">
-                <?php
-
-                ?>
                 <img src="" alt="">
             </div>
         </div>
@@ -41,30 +39,30 @@
                         <li class="nav-item dropdown me-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">Missions</a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Main</a></li>
-                                <li><a class="dropdown-item" href="#">Strangers & Freaks</a></li>
+                                <li><a class="dropdown-item" href="#">Main</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Strangers & Freaks</a><span class="text-muted">doesn't work</span></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown me-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVehicles" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vehicles</a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Cars</a></li>
-                                <li><a class="dropdown-item" href="#">Motorcycles</a></li>
-                                <li><a class="dropdown-item" href="#">Bikes</a></li>
-                                <li><a class="dropdown-item" href="#">Utilities</a></li>
-                                <li><a class="dropdown-item" href="#">Service</a></li>
-                                <li><a class="dropdown-item" href="#">Emergency</a></li>
-                                <li><a class="dropdown-item" href="#">Boats</a></li>
-                                <li><a class="dropdown-item" href="#">Planes</a></li>
-                                <li><a class="dropdown-item" href="#">Helicopters</a></li>
+                                <li><a class="dropdown-item" href="#">Cars</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Motorcycles</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Bikes</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Utilities</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Service</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Emergency</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Boats</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Planes</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Helicopters</a><span class="text-muted">doesn't work</span></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown me-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMisc" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miscellanious</a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Scrap Letters</a></li>
-                                <li><a class="dropdown-item" href="#">SpaceShip Parts</a></li>
-                                <li><a class="dropdown-item" href="#">Altruists Camp</a></li>
+                                <li><a class="dropdown-item" href="#">Scrap Letters</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">SpaceShip Parts</a><span class="text-muted">doesn't work</span></li>
+                                <li><a class="dropdown-item" href="#">Altruists Camp</a><span class="text-muted">doesn't work</span></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -76,11 +74,11 @@
                             </ul>
                         </li>
                         <form class="d-flex me-2">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control me-2" type="search" placeholder="JK.It doesnt work." aria-label="Search">
                             <button class="btn btn-outline-success me-2" type="submit">Search</button>
                         </form>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                     </ul>
                 </div>

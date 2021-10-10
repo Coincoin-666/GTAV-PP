@@ -15,9 +15,8 @@ require "../includes/header.php";
         </div>
     </div>
     <div class="container">
-        
-<!-- insert pictures and carousel here -->
 
+    <p>Insert slick carousel here</p>
 
     </div>
 </div>

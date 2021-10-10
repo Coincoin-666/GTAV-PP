@@ -8,7 +8,7 @@ require "../controllers/vehicles_ctrl.php";
     <div class="container">
         <h2 class="_title">In-Game Vehicle Brands</h2>
         <div class="container border border-dark p-5">
-            <table class="table table-striped table-dark table-hover text-center">
+            <table class="table table-striped table-primary table-hover text-center">
                 <thead>
                     <th scope="col">Logo</th>
                     <th scope="col">Name</th>

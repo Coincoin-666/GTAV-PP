@@ -41,8 +41,8 @@ require "includes/header.php";
             </section>
             <section class="col-sm-12 col-md-4">
                 <div class="card">
-                    <p class="text-dark text-center card-title">interactive map</p>
-                    <!-- It's a card, but also: a big button to go to the selected page -->
+                    <p class="text-secondary bg-info text-center card-title">interactive map btn that does not work because the map isn't there but will be soon enough. WIP on illustrator.</p>
+                    
                 </div>
             </section>
         </div>

@@ -44,8 +44,8 @@
             <div class="current_text">
                 <h3 class="_title text-muted fs-5 text-decoration-underline ms-2">Administrator Area</h3>
                 <ul class="list-unstyled">
-                    <a href="../views/login.php" role="button">
-                        <li class="ms-5">Login</li>
+                    <a href="#" role="button">
+                        <li class="ms-5">Login <span class="text-muted">doesn't work</span></li>
                     </a>
                     <a href="../views/add_user.php" role="button">
                         <li class="ms-5">Add User</li>
@@ -57,26 +57,26 @@
                     <a href="../views/add_icon.php" role="button">
                         <li class="ms-5">Add Icon</li>
                     </a>
+                    <a href="../views/add_vehicles.php" role="button">
+                        <li class="ms-5">Add Vehicles</li>
+                    </a>
+                    <a href="../views/add_character.php" role="button">
+                        <li class="ms-5">Add Character</li>
+                    </a>
+                    <hr class="gold ms-0">
                     <a href="../views/icons.php" role="button">
                         <li class="ms-5">View Icons</li>
                     </a>
                     <a href="../views/list_pictures.php" role="button">
-                        <li class="ms-5">List All</li>
-                    </a>
-                    <hr class="gold ms-0">
-                    <a href="../views/add_vehicles.php" role="button">
-                        <li class="ms-5">Add Vehicles</li>
+                        <li class="ms-5">View All Pictures</li>
                     </a>
                     <a href="../views/list_vehicles_brands.php" role="button">
-                        <li class="ms-5">Vehicles Brands</li>
-                    </a>
-                    <hr class="gold ms-0">
-                    <a href="../views/add_character.php" role="button">
-                        <li class="ms-5">Add Character</li>
+                        <li class="ms-5">View Vehicle Brands</li>
                     </a>
                     <a href="../views/list_characters.php" role="button">
-                        <li class="ms-5">List Characters</li>
+                        <li class="ms-5">View All Characters</li>
                     </a>
+                    <hr class="gold ms-0">
                 </ul>
             </div>
         </div>

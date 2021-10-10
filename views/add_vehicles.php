@@ -77,7 +77,7 @@ require "../controllers/vehicles_ctrl.php";
                     <div class="col">
                         <!-- Brand Country -->
                         <!-- from dbtable: vehicles_brands -->
-                        <label for="brand_origin" class="form-label"><span class="text-muted">(supposed)</span> Country of Origin</label>
+                        <label for="brand_origin" class="form-label">Country of Origin</label>
                         <input type="text" name="vehicle_brand_id" value="<?= $_POST['select_vehicle_brand'] ?>" readonly hidden>
                         <?php
                         foreach ($get_brand_infos as $brand_infos) {
@@ -134,19 +134,15 @@ require "../controllers/vehicles_ctrl.php";
                     </div>
                 </div>
 
-                <div class="mt-5 text-end">
-                    <button name="add_vehicle_btn" class="btn btn-dark ms-2">Save</button>
+                <div class="text-end mt-3">
+                    <button name="add_vehicle_btn" class="btn btn-dark">SAVE</button>
                 </div>
             </form>
         </div>
     <?php
-    var_dump($_POST['select_vehicle_brand']);
     }
     ?>
-    <h2 class="_title mt-2">Screenshot</h2>
-    <div class="container border border-dark p-5">
-        <p class="fs-1 _title red">SCREENSHOT UPLOAD</p>
-    </div>
+
 
 </div>
 
